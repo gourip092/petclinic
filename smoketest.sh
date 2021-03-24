@@ -14,3 +14,7 @@ function checkAddress
         exit
     fi
 }
+
+for ADDRESS in "${ADDRESSES[@]}"; do
+    checkAddress "${ADDRESS}"
+done
