@@ -8,9 +8,9 @@ function checkAddress
 {
     ADDRESS=$1
     if curl -Is "${ADDRESS}" | grep -q 200; then
-        echo "${ADDRESS} ok!"
+        echo "${ADDRESS} ok!/app up"
     else
-        echo "${ADDRESS} fail!"
+        echo "${ADDRESS} fail!/app down"
         exit
     fi
 }
